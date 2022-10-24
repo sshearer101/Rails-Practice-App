@@ -1,27 +1,26 @@
-<div id="<%= dom_id friend %>">
-  <p>
-    <strong>First name:</strong>
-    <%= friend.first_name %>
-  </p>
+<table class="table table-striped table-bordered table-hover">
+<thead class="thead-dark">
+  <tr>
+    <th>Name</th>
+    <th>Email</th>
+    <th>Phone</th>
+    <th>Twitter</th>
+    <th> </th>
+  </tr>
+</thead>
 
-  <p>
-    <strong>Last name:</strong>
-    <%= friend.last_name %>
-  </p>
+<tbody>
 
-  <p>
-    <strong>Email:</strong>
-    <%= friend.email %>
-  </p>
+<tr>
+<td>
 
-  <p>
-    <strong>Phone:</strong>
-    <%= friend.phone %>
-  </p>
+<td><%= friend.email %></td>
+<td><%= friend.phone %></td>
+<td><%= friend.twitter %></td>
 
-  <p>
-    <strong>Twitter:</strong>
-    <%= friend.twitter %>
-  </p>
+<td>
 
-</div>
+</tr>
+
+</tbody>
+</table>
