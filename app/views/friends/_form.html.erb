@@ -10,7 +10,7 @@
       </ul>
     </div>
   <% end %>
-
+        
   <div class = "field form-group">
     <%= form.text_field :first_name, class: "form-control", placeholder: "First Name" %>
   </div>
@@ -34,6 +34,11 @@
     <%= form.text_field :twitter, class: "form-control", placeholder: "Twitter" %>
   </div>
   <br/>
+
+  <div>
+  <%= form.number_field :user_id, id: :friend_user_id, class: "form-control", value: current_user.id, type: :hidden %>
+</div>
+<br/>
 
   <div>
   </br>
